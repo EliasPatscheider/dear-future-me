@@ -1,10 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
+// import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router , Switch, Route } from 'react-router-dom';
 // import TodoList from "./TodoList.js";
-import Nav from './components/Nav';
-import About from './components/About';
-import Vault from './components/Vault';
+import Nav from './components/Nav/Nav';
+import About from './components/About/About';
+import Vault from './components/Vault/Vault';
 
 // const { v4: uuidv4 } = require('uuid');
 
@@ -12,16 +12,20 @@ import Vault from './components/Vault';
 function App() {
 
   return (
-    <Router>
-      <div class="Box">
-        <Nav />
-        <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/vault" component={Vault}/>
-        </Switch>
-      </div>
-    </Router>
+    <div className = "background">
+      <Router>
+        <div>
+          <Nav />
+          <div className="box">
+            <Switch>
+              <Route path="/" exact component={Home}/>
+              <Route path="/about" component={About}/>
+              <Route path="/vault" component={Vault}/>
+            </Switch>
+          </div>
+        </div>
+      </Router>
+    </div>
   );
 
 

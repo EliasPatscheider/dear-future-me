@@ -1,20 +1,36 @@
+
+/* https://blog.prototypr.io/how-to-design-a-dark-theme-for-your-android-app-3daeb264637 */
+
+:root {
+    --primary :	#16161D;
+    --dp0: #121212;
+    --dp1: #1E1E1E;
+    --dp2: #232323;
+    --dp3: #252525;
+    --dp4: #272727;
+    --dp6: #2C2C2C;
+    --dp8: #282828;
+    --dp12: #222222;
+    --dp16: #1D1D1D;
+    --dp24: #1D1D1D;
+
+}
+
+html, body { height: 100%; background-color: var(--dp0); }
+body { margin: 0; font-family: 'Nunito', sans-serif; font-size: 18px; }
+
 .App {
     text-align: center;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    background: rgb(46, 144, 177);
+.box {
+    background-color: var(--dp1);
+    margin-left: 1vh;
     color: white;
 }
 
-.navlinks {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+.background {
+    min-height: 100%;
+    min-width: 100%;
+    
 }
